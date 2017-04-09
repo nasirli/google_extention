@@ -1,0 +1,83 @@
+.dropali-category{
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    width: 100%;
+    height: 24px;
+    background-color: rgb(92, 108, 128);
+    color: rgb(255, 255, 255);
+    line-height: 15px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    border-radius: 0px;
+
+}
+
+.dropali-proses{
+    padding-left: 22px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    flex: 1 1 0%;
+    overflow: hidden;
+}
+
+.day{
+    text-align: right;
+    background-color: rgb(63, 78, 95);
+    border-left: 1px solid rgb(57, 71, 88);
+}
+   
+.dropali-shipping{
+    position: absolute;
+    display: flex;
+    left: 0px;
+    right: 0px;
+}
+
+.dropali-shipping span{
+     font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.dropali-large{
+    top: -22px;
+}
+.drop-first{
+    background-color: rgb(42, 204, 111);
+    min-width: 75px;
+    border-top-left-radius: 4px;
+    padding-left: 22px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    overflow: hidden;
+    flex: 1 1 0%;
+}
+.drop-two{
+
+    min-width: 45px;
+    background-color: rgb(17, 188, 87);
+    border-top-right-radius: 4px;
+    border-left: 1px solid rgb(0, 176, 80);
+
+}
+
+.dropali-button{
+    display: block;
+    position: absolute;
+    right: -30px;
+    top: 60%;
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+
+.dropali-button img{
+    vertical-align: middle;
+}

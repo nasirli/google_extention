@@ -1,0 +1,55 @@
+{
+  "manifest_version": 2,
+
+  "name": "Getting started example",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+ "background": {
+   "persistent": false,
+    "scripts": ["background.js"]
+    
+  }, 
+
+
+  
+  "content_scripts": [{
+      "js": [ "jquery.js" , "item.js" , "myscript.js"],
+      "matches": ["*://*.aliexpress.com/item/*" ],      
+      "run_at":     "document_idle",
+      "all_frames": false
+      },{
+      "js": [ "jquery.js" , "store.js" , "myscript.js"],
+      "matches": ["*://*.aliexpress.com/store/product/*" ],      
+      "run_at":     "document_idle",
+      "all_frames": false
+      },{
+      "css":["category.css"],
+      "js": [ "jquery.js" , "category.js" ,"push_category.js", "getid.js"],
+      "matches": [ "*://*.aliexpress.com/category/*", "*://*.aliexpress.com/wholesale*"]
+      }
+  ],
+
+   
+  
+  "page_action": {
+        "default_icon" : "icon-19.png",
+        "default_title": "Dropali is here",      // optional; shown in tooltip
+        "default_popup": "popup.html"        // optional
+      },
+  "icons" : {
+    "48" : "icon-48.png"
+  },  
+  "permissions": [
+     "declarativeContent",
+     "tabs",
+    "*://*.aliexpress.com/*",
+     "*://*.google.com/*",
+    "*://*.dropali.com/*"
+    
+  ],
+
+  "web_accessible_resources":["push-dropali.png"]
+}
+
+
+
